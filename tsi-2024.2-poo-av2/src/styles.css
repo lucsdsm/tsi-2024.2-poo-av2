@@ -1,2 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import "primeicons/primeicons.css";
+
+.lobster-regular {
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+html, body {
+  background-color: rgb(20, 20, 20);
+}
