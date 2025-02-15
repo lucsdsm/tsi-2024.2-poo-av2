@@ -1,0 +1,27 @@
+<div class="table-container">
+  <p-table 
+  [value]="alunos" 
+  [tableStyle]=""
+  selectionMode="single">
+    <ng-template #header>
+        <tr>
+            <th> Matrícula </th>
+            <th> Nome </th>
+            <th> 1º Módulo </th>
+            <th> 2º Módulo </th>
+            <th> Média Final </th>
+        </tr>
+    </ng-template>
+    <ng-template #body let-aluno of alunos>
+        <tr>
+            <td>{{ aluno.matricula }}</td>
+            <td>{{ aluno.nome }}</td>
+            <td *ngFor="let nota of aluno.notas; let i = index">
+              {{ nota }}
+            </td>
+            <td> {{ aluno.calcularMedia() }} </td>
+        </tr>
+    </ng-template>
+  </p-table>
+</div>
+

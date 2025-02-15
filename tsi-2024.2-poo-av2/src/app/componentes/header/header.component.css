@@ -1,0 +1,20 @@
+* {
+    transition: 0.5s;
+}
+
+.header {
+    font-family: Lobster;
+    padding: 1rem;
+    user-select: none;
+
+    background-color: rgb(20, 20, 20);
+}
+
+.header h1 {
+    cursor: pointer ;
+    color: white;
+}
+
+.header h1:hover {
+    color: grey;
+}
