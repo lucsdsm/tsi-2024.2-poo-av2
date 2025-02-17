@@ -12,6 +12,8 @@
     width: 75vh;
 
     border-collapse: collapse;
+
+    user-select: none;
 }
 
 ::ng-deep .p-datatable .p-datatable-thead th {
@@ -21,6 +23,7 @@
 
 ::ng-deep .p-datatable .p-datatable-tbody > tr {
     background-color: rgb(20, 20, 20);
+    color: white;
 }
 
 ::ng-deep .p-datatable .p-datatable-thead > tr > th,
